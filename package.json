@@ -1,0 +1,24 @@
+{
+  "name": "agentpay-web-scraper-mcp",
+  "version": "1.1.0",
+  "description": "Web Scraper MCP Server — Scrape any web page with CSS selectors, AgentPay Pro upsell",
+  "type": "module",
+  "main": "server.py",
+  "scripts": {
+    "start": "python3 server.py",
+    "start:pro": "python3 server.py --pro-key YOUR_PRO_KEY"
+  },
+  "keywords": ["mcp", "web-scraper", "agentpay", "ai", "model-context-protocol"],
+  "author": "AgentPay Labs",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AgentPayLabs/agentpay-web-scraper-mcp"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "mcp": ">=1.0.0"
+  }
+}

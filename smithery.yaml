@@ -1,0 +1,20 @@
+# Configuration for Smithery.ai deployment
+# https://smithery.ai/server/@AgentPayLabs/agentpay-web-scraper-mcp
+
+startCommand:
+  type: stdio
+  configSchema:
+    type: object
+    properties:
+      proKey:
+        type: string
+        description: >-
+          AgentPay Pro key for unlimited usage. Get yours at
+          https://buy.stripe.com/5kQ3cxflRabW9PW1AD1oI0r
+        default: ""
+  commandFunction: |
+    (config) => {
+      const args = ['server.py'];
+      if (config.proKey) args.push('--pro-key', config.proKey);
+      return {command: 'python', args};
+    }
