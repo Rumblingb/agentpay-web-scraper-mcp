@@ -15,7 +15,7 @@ from urllib.parse import urljoin, urlparse
 from typing import Optional
 
 import httpx
-from mcp.server import Server
+from mcp.server.lowlevel import Server
 from mcp.server.models import InitializationOptions
 import mcp.server.stdio
 import mcp.types as types
